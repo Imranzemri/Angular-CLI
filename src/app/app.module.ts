@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
 import { SuccessComponent } from './success/success.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
     MatIconModule,
     MatFormFieldModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
+    SimpleNotificationsModule.forRoot()
   ],
   providers: [ApiService],
   bootstrap: [AppComponent] 

@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import * as QRCode from 'qrcode';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class QrcodeService {
 
   constructor() { }
+
 
   generateQRCode(data: string): Promise<string> {
     return new Promise<string>((resolve, reject) => {
